@@ -7,7 +7,6 @@ import ChatIcon from '@material-ui/icons/Chat'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 import HeaderOption from './HeaderOption';
 
-import image from './me.jpg'
 import { useDispatch } from 'react-redux';
 import { logout } from './features/userSlice';
 import { auth } from './firebase';

@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { login, logout, selectUser } from './features/userSlice'
+import { auth } from './firebase';
 
 import Login from './Login'
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
+import Widgets from './Widgets';
 import './App.css';
-import { auth } from './firebase';
+
 
 function App() {
 
@@ -30,7 +32,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* Header */}
       <Header />
 
       {!user ? (
@@ -39,6 +40,7 @@ function App() {
         <div className="app__body">
             <Sidebar />
             <Feed />
+            <Widgets />
         </div>
       )}
     </div>
