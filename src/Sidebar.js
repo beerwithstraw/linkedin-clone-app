@@ -21,7 +21,7 @@ function Sidebar() {
 
             <div className="sidebar__top">
                 <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="" />
-                <Avatar src={user.photoUrl} className="siddebar__avatar">{user.email[0]}</Avatar>
+                <Avatar src={user.photoUrl} className="siddebar__avatar">{user.displayName[0]}</Avatar>
                 <h2>{user.displayName}</h2>  
                 <h4>{user.email}</h4> 
             </div>

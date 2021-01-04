@@ -37,7 +37,8 @@ function Login() {
 
         auth.createUserWithEmailAndPassword(email, password)
         .then((userAuth) => {
-            userAuth.user.updateProfile({
+            userAuth.user
+            .updateProfile({
                 displayName: name,
                 photoURL: profilePic,
             })
@@ -46,7 +47,7 @@ function Login() {
                     email: userAuth.user.email,
                     uid: userAuth.user.uid,
                     displayName: name,
-                    photoURL: profilePic,
+                    photoUrl: profilePic,
                     
                 }))
         })
