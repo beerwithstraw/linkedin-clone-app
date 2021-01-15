@@ -32,7 +32,7 @@ function Feed() {
         })
     }, [])
 
-    const sendPost = e => {
+    const sendPost = (e) => {
         e.preventDefault();
 
         db.collection("posts").add({
